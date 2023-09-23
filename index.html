@@ -3,42 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-    <link rel="stylesheet" href="./css/global.css">
     <title>Frontend-3-Contest-2-Sep</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="back"></div>
-
     <div class="container">
-
-        <p class="alert"></p>
-        <div class="card">
-            <p class="welcome-message">Welcome back! 👋</p>
-            <h2>Sign up to your account</h2>
-
-            <form action="#" method="post">
-                <label for="name">Your name</label>
-                <input type="text" name="name" id="name" placeholder="">
-
-                <label for="email">Your email</label>
-                <input type="email" name="email" id="email" placeholder="">
-
-                <label for="password">Password</label>
-                <input type="password" name="password" id="password" placeholder="">
-
-                <label for="cpassword">Confirm Password</label>
-                <input type="password" name="cpassword" id="cpassword" placeholder="">
-            
-                <input type="submit" class="btn" value="Continue">
-            </form>
-
-            <p class="form-alert"></p>
+        <div class="img-div">
+            <svg xmlns="http://www.w3.org/2000/svg" width="1280" height="487" viewBox="0 0 1280 487" fill="none">
+                <path d="M-24 0L1280 351.443V487H-24V0Z" fill="#5BF7DB" />
+            </svg>
         </div>
-
-        <p class="bottom-line">Don't have an account <a href="/index.html">Sign up</a></p>
+        <div class="form">
+            <h3>Welcome back! 👋</h3>
+            <h1>Sign up to your account</h1>
+            <form id="signupForm">
+                <label for="username">Your name</label>
+                <input type="text" id="username" required>
+                <label for="email">Your email</label>
+                <input type="email" id="email" required>
+                <label for="password">Password</label>
+                <input type="password" id="password" required>
+                <label for="password">Confirm Password</label>
+                <input type="password" id="confirmpassword" required>
+                <button id="btn1" type="submit">Continue</button><br>
+                <div id="errorMessage" class="message">Error: All fields are mandatory!</div>
+            </form>
+        </div>
+        <div class="sign-up"><a href="./index.html">Don't have an account?<span> Sign up</span></a></div>
     </div>
-
-    <script src="./script.js"></script>
+    <!-- JS -->
+    <script src="script.js"></script>
 </body>
 </html>
